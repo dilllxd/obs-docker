@@ -77,7 +77,7 @@ No password is set by default (for convenience), so be cautious if exposing the 
 
 - I don't have an AMD gpu to test the AMD image, ChatGPT said it should work so please report any issues or feel free to PR!
 - I’d love to add NVIDIA GPU support, but I don’t have one anymore to test with or feel confident making a Dockerfile for it. If you want to help out, feel free to send a PR! My Dockerfiles are a good place to start.
-- My testing environment is relatively unique: I'm running Unraid 7.1.4 and have a monitor connected directly to the GPU.
+- My testing environment is currently: Unraid 7.1.4, Intel Arc B580 with monitor connected through HDMI.
 
 ---
 
