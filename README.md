@@ -21,7 +21,7 @@ Use the appropriate Docker run command depending on your GPU type.
 docker run -it --rm \
   --network br0 \
   --device=/dev/dri \
-  --shm-size=2g \
+  --shm-size=4g \
   --env DISPLAY=:0 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-intel \
@@ -58,7 +58,7 @@ docker run -it --rm \
 
 - I don't have an AMD gpu to test the AMD image, ChatGPT said it should work so please report any issues or feel free to PR!
 - I’d love to add NVIDIA GPU support, but I don’t have one anymore to test with or feel confident making a Dockerfile for it. If you want to help out, feel free to send a PR! My Dockerfiles are a good place to start.
-- My testing enviroment is relatively unique, I'm running Unraid 7.1.4 and I do have a monitor hooked into the GPU. Other than that I don't think there's anything else special about it.
+- My testing environment is relatively unique: I'm running Unraid 7.1.4 and have a monitor connected directly to the GPU.
 
 ---
 
