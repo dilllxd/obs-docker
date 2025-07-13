@@ -20,7 +20,7 @@ docker run -it --rm \
   -p 6080:6080 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-amd \
-  ghcr.io/dilllxd/obs-distroav:amd
+  ghcr.io/dilllxd/obs-distroav:amd-latest
 ```
 
 # Accessing the Container via VNC or webVNC
