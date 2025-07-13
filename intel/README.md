@@ -19,7 +19,7 @@ docker run -it --rm \
   -p 5911:5911 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-intel \
-  obs-distroav:intel
+  ghcr.io/dilllxd/obs-distroav:intel
 ```
 
 ## Accessing the Container via VNC
