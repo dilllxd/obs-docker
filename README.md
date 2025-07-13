@@ -24,9 +24,10 @@ docker run -it --rm \
   --shm-size=4g \
   --env DISPLAY=:0 \
   -p 5911:5911 \
+  -p 6080:6080 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-intel \
-  ghcr.io/dilllxd/obs-distroav:intel
+  ghcr.io/dilllxd/obs-distroav:intel-latest
 ```
 
 ### AMD GPU Example
@@ -38,9 +39,10 @@ docker run -it --rm \
   --shm-size=4g \
   --env DISPLAY=:0 \
   -p 5911:5911 \
+  -p 6080:6080 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-amd \
-  ghcr.io/dilllxd/obs-distroav:amd
+  ghcr.io/dilllxd/obs-distroav:amd-latest
 ```
 
 ---
