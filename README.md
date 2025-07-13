@@ -6,7 +6,7 @@ This repository contains Dockerfiles and instructions for running OBS Studio wit
 
 ## Available Images
 
-- `obs-distroav:intel` — Optimized for Intel integrated GPUs  
+- `obs-distroav:intel` — Optimized for Intel GPUs 
 - `obs-distroav:amd` — Optimized for AMD GPUs
 
 ---
