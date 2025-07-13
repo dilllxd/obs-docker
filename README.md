@@ -26,7 +26,7 @@ docker run -it --rm \
   -p 5911:5911 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-intel \
-  obs-distroav:intel
+  ghcr.io/dilllxd/obs-distroav:intel
 ```
 
 ### AMD GPU Example
@@ -40,7 +40,7 @@ docker run -it --rm \
   -p 5911:5911 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-amd \
-  obs-distroav:amd
+  ghcr.io/dilllxd/obs-distroav:amd
 ```
 
 ---
