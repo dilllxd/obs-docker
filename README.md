@@ -63,6 +63,7 @@ No password is set by default (for convenience), so be cautious if exposing the 
 
 ## Important Notes
 
+- You *cannot* run this container without a GPU attached to the container. Please do not report issues if you do not have a GPU attached.
 - The containers require access to the host GPU via `/dev/dri`.
 - Use the `br0` network bridge to enable proper NDI source discovery.
 - Shared memory is set to 4GB to improve stability with OBS.
