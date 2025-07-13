@@ -23,6 +23,7 @@ docker run -it --rm \
   --device=/dev/dri \
   --shm-size=4g \
   --env DISPLAY=:0 \
+  -p 5911:5911 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-intel \
   obs-distroav:intel
@@ -36,10 +37,27 @@ docker run -it --rm \
   --device=/dev/dri \
   --shm-size=4g \
   --env DISPLAY=:0 \
+  -p 5911:5911 \
   -v ~/.config/obs-studio:/root/.config/obs-studio \
   --name obs-amd \
   obs-distroav:amd
 ```
+
+---
+
+## Connecting via VNC
+
+The containers start an X server environment with Fluxbox window manager and `x11vnc` running on port **5911** by default. This allows you to remotely access the desktop environment inside the container.
+
+To connect:
+
+1. Make sure port **5911** is accessible.  
+   - If running locally, you can connect to `localhost:5911`.  
+   - If you’re connecting remotely, ensure the network allows access to port 5911 on the host machine (you might need to forward or open the port depending on your setup).
+
+2. Use any VNC client (e.g., RealVNC, TigerVNC, TightVNC) to connect to the container's IP on port 5911.
+
+No password is set by default (for convenience), so be cautious if exposing the port publicly.
 
 ---
 
