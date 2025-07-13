@@ -69,6 +69,7 @@ No password is set by default (for convenience), so be cautious if exposing the 
 - OBS settings and profiles are persisted by mounting your local `~/.config/obs-studio` directory inside the container.
 - Ensure proper permissions on `/dev/dri` devices on your host for container access.
 - By default, the containers start a lightweight X server with Fluxbox and x11vnc on port 5911 to reduce potential conflicts.
+- This setup supports Twitch’s Enhanced Broadcasting Beta, so if you’ve got a server with a supported GPU, you can offload your encoding to it and free up your main system!
 
 ---
 
@@ -91,6 +92,13 @@ docker build -t obs-distroav:intel ./intel
 # For AMD GPU image
 docker build -t obs-distroav:amd ./amd
 ```
+
+---
+
+## Potential Roadmap:
+
+1. Web VNC Client in addition to VNC server to negate the need to have a VNC client installed locally.
+2. More testing, I just don't have the resources to test on all different types of GPU's. I personally have a B580 that I've been using and it works amazingly. I might be able to test a 3060 and a RX 9070 XT in the near future but no promises ):
 
 ---
 
