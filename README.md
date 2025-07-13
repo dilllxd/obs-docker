@@ -100,6 +100,7 @@ docker build -t obs-distroav:amd ./amd
 
 1. Web VNC Client in addition to VNC server to negate the need to have a VNC client installed locally.
 2. More testing, I just don't have the resources to test on all different types of GPU's. I personally have a B580 that I've been using and it works amazingly. I might be able to test a 3060 and a RX 9070 XT in the near future but no promises ):
+3. CPU framebuffer support, I have tried this but have had varying success/issues. Low FPS on OBS was one of the main issues. But, experimenting wouldn't hurt.
 
 ---
 
