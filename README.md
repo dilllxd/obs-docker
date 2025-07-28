@@ -4,6 +4,11 @@ This repository contains Dockerfiles and instructions for running OBS Studio wit
 
 ---
 
+> ⚠️ **Deprecation Notice:**  
+> This project is no longer actively maintained. While it was a fun and useful experiment, Docker just isn't a great fit for running OBS long-term, especially due to how much OBS relies on direct GPU access/X server access. If you're interested in continuing the project, feel free to fork it or reach out for any other questions. I'm happy to help where I can. I'm also open to changing the license if needed to better fit the deprecation. I'm removing all Docker images that are prebuilt as well.
+
+---
+
 ## Available Images
 
 - `obs-distroav:intel` — Optimized for Intel GPUs 
